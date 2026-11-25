@@ -1,0 +1,493 @@
+{
+  "n_scenarios": 30,
+  "overall_completion_rate": 0.8,
+  "valid_completion_rate": 1.0,
+  "missing_scenarios": 5,
+  "missing_resolved_rate": 1.0,
+  "invalid_scenarios": 3,
+  "invalid_handled_rate": 1.0,
+  "no_match_scenarios": 3,
+  "no_match_correct_rate": 1.0,
+  "avg_turns": 1.2,
+  "avg_latency_ms": 60.00633333333333,
+  "low_confidence_rate": 0.16666666666666666,
+  "skill_evidence_coverage": 0.9208333333333334,
+  "constraint_evidence_coverage": 1.0,
+  "rows": [
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 518.38,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 56.44,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "low",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。",
+        "候选岗位的排序区分度较低，建议补充技能/城市偏好或进行人工复核。"
+      ],
+      "latency_ms": 57.47,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 55.36,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 54.44,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "low",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。",
+        "候选岗位的排序区分度较低，建议补充技能/城市偏好或进行人工复核。"
+      ],
+      "latency_ms": 55.81,
+      "skill_evidence": 0.7,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 56.67,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "low",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。",
+        "候选岗位的排序区分度较低，建议补充技能/城市偏好或进行人工复核。"
+      ],
+      "latency_ms": 58.74,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。"
+      ],
+      "latency_ms": 55.09,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "complete",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 57.23,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "missing_city",
+      "category": "missing",
+      "first_status": "need_more_info",
+      "final_status": "ok",
+      "turns": 2,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [
+        "你希望在哪个城市工作？支持：北京、上海、深圳、杭州、广州、成都、武汉、南京、西安、苏州、重庆、长沙。"
+      ],
+      "warnings": [],
+      "latency_ms": 53.46,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "missing_salary",
+      "category": "missing",
+      "first_status": "need_more_info",
+      "final_status": "ok",
+      "turns": 2,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [
+        "你的期望月薪是多少 k？（例如 12 表示 12k/月）"
+      ],
+      "warnings": [],
+      "latency_ms": 52.9,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "missing_experience",
+      "category": "missing",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 52.9,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "missing_education",
+      "category": "missing",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 55.72,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "missing_skills",
+      "category": "missing",
+      "first_status": "need_more_info",
+      "final_status": "ok",
+      "turns": 2,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [
+        "请补充 3–5 个核心技能，或说明你想找的岗位方向（如数据分析、后端开发）。"
+      ],
+      "warnings": [],
+      "latency_ms": 55.51,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "invalid_salary_negative",
+      "category": "invalid",
+      "first_status": "need_more_info",
+      "final_status": "need_more_info",
+      "turns": 2,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "期望月薪需在 3–100k 之间，请重新填写。",
+        "你的期望月薪是多少 k？（例如 12 表示 12k/月）"
+      ],
+      "warnings": [],
+      "latency_ms": 0.03,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "invalid_salary_high",
+      "category": "invalid",
+      "first_status": "need_more_info",
+      "final_status": "need_more_info",
+      "turns": 2,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "期望月薪需在 3–100k 之间，请重新填写。",
+        "你的期望月薪是多少 k？（例如 12 表示 12k/月）"
+      ],
+      "warnings": [],
+      "latency_ms": 0.02,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "invalid_experience",
+      "category": "invalid",
+      "first_status": "need_more_info",
+      "final_status": "need_more_info",
+      "turns": 2,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "工作经验需在 0–40 年之间，请重新填写。",
+        "你有几年相关工作经验？（应届生填 0）"
+      ],
+      "warnings": [],
+      "latency_ms": 0.01,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "no_match_finance",
+      "category": "no_match",
+      "first_status": "no_match",
+      "final_status": "no_match",
+      "turns": 1,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "是否增加目标城市（如北京、上海、深圳、杭州）？",
+        "是否将期望薪资下调 10%–20%？",
+        "是否补充技能或接受相关岗位方向？"
+      ],
+      "warnings": [
+        "期望薪资较高，可能会过滤掉部分匹配岗位。",
+        "严格条件下仅有 0 个候选，已按第 4 级放宽薪资/经验/城市范围；请确认放宽后的结果。"
+      ],
+      "latency_ms": 1.48,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "no_match_salary",
+      "category": "no_match",
+      "first_status": "no_match",
+      "final_status": "no_match",
+      "turns": 1,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "是否增加目标城市（如北京、上海、深圳、杭州）？",
+        "是否将期望薪资下调 10%–20%？",
+        "是否补充技能或接受相关岗位方向？"
+      ],
+      "warnings": [
+        "期望薪资较高，可能会过滤掉部分匹配岗位。",
+        "严格条件下仅有 0 个候选，已按第 4 级放宽薪资/经验/城市范围；请确认放宽后的结果。"
+      ],
+      "latency_ms": 1.2,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "no_match_education",
+      "category": "no_match",
+      "first_status": "no_match",
+      "final_status": "no_match",
+      "turns": 1,
+      "n_recs": 0,
+      "confidence": null,
+      "questions": [
+        "是否增加目标城市（如北京、上海、深圳、杭州）？",
+        "是否将期望薪资下调 10%–20%？",
+        "是否补充技能或接受相关岗位方向？"
+      ],
+      "warnings": [
+        "期望薪资较高，可能会过滤掉部分匹配岗位。",
+        "严格条件下仅有 0 个候选，已按第 4 级放宽薪资/经验/城市范围；请确认放宽后的结果。"
+      ],
+      "latency_ms": 1.09,
+      "skill_evidence": 0.0,
+      "constraint_evidence": 0.0
+    },
+    {
+      "scenario": "cold_data",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 54.6,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "cold_algorithm",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 52.88,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "cold_operations",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 53.02,
+      "skill_evidence": 0.4,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "remote_pref",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。"
+      ],
+      "latency_ms": 55.06,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "many_cities",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "high",
+      "questions": [],
+      "warnings": [
+        "目标城市较多，推荐结果可能更分散。"
+      ],
+      "latency_ms": 58.71,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "high_salary",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "low",
+      "questions": [],
+      "warnings": [
+        "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。",
+        "严格条件下仅有 0 个候选，已按第 1 级放宽薪资/经验/城市范围；请确认放宽后的结果。",
+        "候选岗位的排序区分度较低，建议补充技能/城市偏好或进行人工复核。"
+      ],
+      "latency_ms": 54.34,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "text_data",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 56.45,
+      "skill_evidence": 1.0,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "text_backend",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 57.09,
+      "skill_evidence": 0.6,
+      "constraint_evidence": 1.0
+    },
+    {
+      "scenario": "text_design",
+      "category": "valid",
+      "first_status": "ok",
+      "final_status": "ok",
+      "turns": 1,
+      "n_recs": 10,
+      "confidence": "medium",
+      "questions": [],
+      "warnings": [],
+      "latency_ms": 58.09,
+      "skill_evidence": 0.4,
+      "constraint_evidence": 1.0
+    }
+  ]
+}

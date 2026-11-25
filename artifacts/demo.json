@@ -1,0 +1,2734 @@
+{
+  "incomplete": {
+    "status": "need_more_info",
+    "session_id": "demo_incomplete",
+    "message": "还需要补充或修正一些信息，才能给出可靠推荐。",
+    "profile": {
+      "user_id": "demo_incomplete",
+      "name": "匿名求职者",
+      "city": "杭州",
+      "target_cities": [
+        "杭州"
+      ],
+      "expected_salary": 15.0,
+      "experience_years": null,
+      "education": null,
+      "remote_pref": false,
+      "skills": [
+        "数据分析"
+      ],
+      "preferred_families": [
+        "data",
+        "product",
+        "operations"
+      ],
+      "bio": "我想找数据分析方向的工作，期望月薪 15k 左右，最好在杭州。"
+    },
+    "questions": [
+      "你有几年相关工作经验？（应届生填 0）",
+      "你的最高学历是？（大专/本科/硕士/博士）"
+    ],
+    "warnings": [],
+    "recommendations": [],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 1
+        },
+        "elapsed_ms": 0.65
+      },
+      {
+        "step": "validate_profile",
+        "status": "need_more_info",
+        "detail": {
+          "errors": 0,
+          "missing": [
+            "experience_years",
+            "education"
+          ]
+        },
+        "elapsed_ms": 0.65
+      }
+    ],
+    "latency_ms": 0.66
+  },
+  "incomplete_followup": {
+    "status": "ok",
+    "session_id": "demo_incomplete",
+    "message": "已为「数据与算法型（Python/SQL）」画像生成 10 个岗位建议。",
+    "profile": {
+      "user_id": "demo_incomplete",
+      "name": "匿名求职者",
+      "city": "杭州",
+      "target_cities": [
+        "杭州",
+        "上海"
+      ],
+      "expected_salary": 12.0,
+      "experience_years": 0,
+      "education": "本科",
+      "remote_pref": false,
+      "skills": [
+        "SQL",
+        "Python",
+        "Excel",
+        "Pandas",
+        "统计分析",
+        "数据可视化"
+      ],
+      "preferred_families": [
+        "data"
+      ],
+      "bio": "我想找数据分析方向的工作，期望月薪 15k 左右，最好在杭州。 应届本科，统计学专业，做过课程数据分析和一段报表实习，希望找数据分析方向的工作。"
+    },
+    "cluster": {
+      "id": 5,
+      "name": "数据与算法型（Python/SQL）",
+      "size": 51,
+      "top_skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "业务分析",
+        "A/B测试"
+      ],
+      "top_preferred_families": [
+        "数据分析",
+        "运营",
+        "后端开发"
+      ]
+    },
+    "recommendations": [
+      {
+        "job_id": "J00958",
+        "title": "数据运营分析师",
+        "company": "麦田科技",
+        "city": "上海",
+        "salary": "10.0-14.0k",
+        "salary_min": 10.0,
+        "salary_max": 14.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "统计分析",
+          "Pandas",
+          "A/B测试",
+          "SQL",
+          "Python",
+          "Power BI",
+          "Spark"
+        ],
+        "score": 0.4206,
+        "match_level": "高",
+        "explanation": "你的技能「统计分析、Pandas、SQL」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 14.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、Power BI，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "统计分析",
+            "Pandas",
+            "SQL",
+            "Python"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "Power BI",
+            "Spark"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.0577
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.3377
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            }
+          ],
+          "salary_gap": 2.0
+        },
+        "rank": 1
+      },
+      {
+        "job_id": "J00919",
+        "title": "数据分析师",
+        "company": "麦田科技",
+        "city": "杭州",
+        "salary": "10.5-15.0k",
+        "salary_min": 10.5,
+        "salary_max": 15.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": true,
+        "family": "数据分析",
+        "skills": [
+          "数据可视化",
+          "Python",
+          "Excel",
+          "A/B测试",
+          "业务分析",
+          "数据仓库",
+          "Tableau",
+          "SQL"
+        ],
+        "score": 0.4188,
+        "match_level": "中",
+        "explanation": "你的技能「数据可视化、Python、Excel」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 15.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、业务分析、数据仓库，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "数据可视化",
+            "Python",
+            "Excel",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "业务分析",
+            "数据仓库",
+            "Tableau"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": true
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.1076
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.4011
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            }
+          ],
+          "salary_gap": 3.0
+        },
+        "rank": 2
+      },
+      {
+        "job_id": "J00957",
+        "title": "数据分析师",
+        "company": "深蓝数据",
+        "city": "杭州",
+        "salary": "11.5-16.5k",
+        "salary_min": 11.5,
+        "salary_max": 16.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "SQL",
+          "Python",
+          "A/B测试",
+          "NumPy",
+          "Tableau",
+          "Power BI"
+        ],
+        "score": 0.4069,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、Python」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 16.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、NumPy，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "Python"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "NumPy",
+            "Tableau",
+            "Power BI"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.084
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.5655
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 4.5
+        },
+        "rank": 3
+      },
+      {
+        "job_id": "J00854",
+        "title": "数据运营分析师",
+        "company": "advantage 科技",
+        "city": "上海",
+        "salary": "9.5-13.5k",
+        "salary_min": 9.5,
+        "salary_max": 13.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": true,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "Python",
+          "Pandas",
+          "统计分析",
+          "Excel",
+          "ETL",
+          "Power BI",
+          "NumPy"
+        ],
+        "score": 0.3619,
+        "match_level": "中",
+        "explanation": "你的技能「Python、Pandas、统计分析」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 13.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、ETL、Power BI，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "Pandas",
+            "统计分析",
+            "Excel"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "ETL",
+            "Power BI",
+            "NumPy"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": true
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.0451
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 1.5
+        },
+        "rank": 4
+      },
+      {
+        "job_id": "J00990",
+        "title": "数据运营分析师",
+        "company": "云帆网络",
+        "city": "杭州",
+        "salary": "11.0-16.0k",
+        "salary_min": 11.0,
+        "salary_max": 16.0,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "Python",
+          "Pandas",
+          "业务分析",
+          "A/B测试",
+          "Excel",
+          "Hive",
+          "数据清洗",
+          "ETL",
+          "Spark"
+        ],
+        "score": 0.3618,
+        "match_level": "中",
+        "explanation": "你的技能「Python、Pandas、Excel」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 16.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、Hive，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "Pandas",
+            "Excel"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "Hive",
+            "数据清洗",
+            "ETL",
+            "Spark"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.7499
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.6588
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 4.0
+        },
+        "rank": 5
+      },
+      {
+        "job_id": "J00910",
+        "title": "数据分析师",
+        "company": "博观智能",
+        "city": "上海",
+        "salary": "12.0-17.0k",
+        "salary_min": 12.0,
+        "salary_max": 17.0,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "SQL",
+          "数据可视化",
+          "统计分析",
+          "Pandas",
+          "Excel",
+          "数据清洗",
+          "Python"
+        ],
+        "score": 0.3516,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、数据可视化、统计分析」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 17.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 数据清洗，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "数据可视化",
+            "统计分析",
+            "Pandas",
+            "Excel",
+            "Python"
+          ],
+          "missing_skills": [
+            "数据清洗"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.6403
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.479
+            },
+            {
+              "feature": "cluster_skill_sim",
+              "label": "分群技能相似度",
+              "contribution": 0.1606
+            }
+          ],
+          "salary_gap": 5.0
+        },
+        "rank": 6
+      },
+      {
+        "job_id": "J00982",
+        "title": "数据运营分析师",
+        "company": "星桥科技",
+        "city": "上海",
+        "salary": "10.5-15.5k",
+        "salary_min": 10.5,
+        "salary_max": 15.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "SQL",
+          "统计分析",
+          "Pandas",
+          "A/B测试",
+          "Python",
+          "Tableau",
+          "NumPy",
+          "Spark",
+          "数据清洗",
+          "scikit-learn"
+        ],
+        "score": 0.3427,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、统计分析、Pandas」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 15.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Tableau、NumPy，你的画像中尚未填写。模型主要依据：岗位热度、岗位文本与画像相似度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "统计分析",
+            "Pandas",
+            "Python"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Tableau",
+            "NumPy",
+            "Spark",
+            "数据清洗",
+            "scikit-learn"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.7016
+            },
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.508
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 3.5
+        },
+        "rank": 7
+      },
+      {
+        "job_id": "J00998",
+        "title": "数据分析师",
+        "company": "同舟网络",
+        "city": "杭州",
+        "salary": "10.0-14.5k",
+        "salary_min": 10.0,
+        "salary_max": 14.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "数据可视化",
+          "Pandas",
+          "SQL",
+          "A/B测试",
+          "Tableau",
+          "推荐系统"
+        ],
+        "score": 0.3196,
+        "match_level": "低",
+        "explanation": "你的技能「数据可视化、Pandas、SQL」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 14.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Tableau、推荐系统，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、目标方向匹配。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "数据可视化",
+            "Pandas",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Tableau",
+            "推荐系统"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.608
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1522
+            }
+          ],
+          "salary_gap": 2.5
+        },
+        "rank": 8
+      },
+      {
+        "job_id": "J00761",
+        "title": "数据分析师",
+        "company": "灵犀智能",
+        "city": "上海",
+        "salary": "10.0-14.5k",
+        "salary_min": 10.0,
+        "salary_max": 14.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "统计分析",
+          "数据可视化",
+          "A/B测试",
+          "Excel",
+          "Python",
+          "SQL",
+          "Spark",
+          "Power BI",
+          "Hive"
+        ],
+        "score": 0.3101,
+        "match_level": "低",
+        "explanation": "你的技能「统计分析、数据可视化、Excel」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 14.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Spark、Power BI，你的画像中尚未填写。模型主要依据：岗位热度、岗位文本与画像相似度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "统计分析",
+            "数据可视化",
+            "Excel",
+            "Python",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Spark",
+            "Power BI",
+            "Hive"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.6136
+            },
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.274
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2562
+            }
+          ],
+          "salary_gap": 2.5
+        },
+        "rank": 9
+      },
+      {
+        "job_id": "J00868",
+        "title": "数据运营分析师",
+        "company": "白泽智能",
+        "city": "上海",
+        "salary": "9.0-13.0k",
+        "salary_min": 9.0,
+        "salary_max": 13.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "Pandas",
+          "A/B测试",
+          "统计分析",
+          "数据可视化",
+          "SQL",
+          "Hive",
+          "数据仓库",
+          "ETL"
+        ],
+        "score": 0.296,
+        "match_level": "低",
+        "explanation": "你的技能「Pandas、统计分析、数据可视化」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 13.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Hive、数据仓库，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Pandas",
+            "统计分析",
+            "数据可视化",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Hive",
+            "数据仓库",
+            "ETL"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.4364
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 1.0
+        },
+        "rank": 10
+      }
+    ],
+    "warnings": [],
+    "questions": [],
+    "confidence": "high",
+    "next_actions": [
+      {
+        "action": "adjust_constraints",
+        "label": "放宽城市或薪资"
+      },
+      {
+        "action": "add_skills",
+        "label": "补充技能"
+      },
+      {
+        "action": "export_requires_confirmation",
+        "label": "确认后导出投递清单"
+      }
+    ],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 6
+        },
+        "elapsed_ms": 0.03
+      },
+      {
+        "step": "validate_profile",
+        "status": "ok",
+        "detail": {
+          "errors": 0,
+          "missing": []
+        },
+        "elapsed_ms": 0.03
+      },
+      {
+        "step": "infer_preferences",
+        "status": "ok",
+        "detail": {
+          "target_cities": [
+            "杭州",
+            "上海"
+          ],
+          "families": [
+            "data"
+          ]
+        },
+        "elapsed_ms": 0.03
+      },
+      {
+        "step": "user_clustering",
+        "status": "ok",
+        "detail": {
+          "cluster": {
+            "id": 5,
+            "name": "数据与算法型（Python/SQL）",
+            "size": 51,
+            "top_skills": [
+              "Python",
+              "SQL",
+              "Excel",
+              "业务分析",
+              "A/B测试"
+            ],
+            "top_preferred_families": [
+              "数据分析",
+              "运营",
+              "后端开发"
+            ]
+          }
+        },
+        "elapsed_ms": 80.21
+      },
+      {
+        "step": "hard_constraint_filter",
+        "status": "ok",
+        "detail": {
+          "candidate_counts": [
+            172
+          ],
+          "relax_level": 0
+        },
+        "elapsed_ms": 80.38
+      },
+      {
+        "step": "learned_ranking",
+        "status": "ok",
+        "detail": {
+          "returned": 10
+        },
+        "elapsed_ms": 468.46
+      },
+      {
+        "step": "explanation_generation",
+        "status": "ok",
+        "detail": {
+          "explanations": 10
+        },
+        "elapsed_ms": 514.64
+      },
+      {
+        "step": "confidence_check",
+        "status": "high",
+        "detail": {
+          "top_score": 0.4206,
+          "margin": 0.0588
+        },
+        "elapsed_ms": 514.64
+      }
+    ],
+    "latency_ms": 514.64
+  },
+  "complete": {
+    "status": "ok",
+    "session_id": "demo_coldstart",
+    "message": "已为「数据与算法型（Python/SQL）」画像生成 10 个岗位建议。",
+    "profile": {
+      "user_id": "demo_coldstart",
+      "name": "匿名求职者",
+      "city": "杭州",
+      "target_cities": [
+        "杭州",
+        "上海"
+      ],
+      "expected_salary": 12.0,
+      "experience_years": 0,
+      "education": "本科",
+      "remote_pref": false,
+      "skills": [
+        "SQL",
+        "Python",
+        "Excel",
+        "Pandas",
+        "统计分析",
+        "数据可视化"
+      ],
+      "preferred_families": [
+        "data"
+      ],
+      "bio": "应届本科，统计学专业，做过课程数据分析和一段报表实习，希望找数据分析方向的工作。"
+    },
+    "cluster": {
+      "id": 5,
+      "name": "数据与算法型（Python/SQL）",
+      "size": 51,
+      "top_skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "业务分析",
+        "A/B测试"
+      ],
+      "top_preferred_families": [
+        "数据分析",
+        "运营",
+        "后端开发"
+      ]
+    },
+    "recommendations": [
+      {
+        "job_id": "J00958",
+        "title": "数据运营分析师",
+        "company": "麦田科技",
+        "city": "上海",
+        "salary": "10.0-14.0k",
+        "salary_min": 10.0,
+        "salary_max": 14.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "统计分析",
+          "Pandas",
+          "A/B测试",
+          "SQL",
+          "Python",
+          "Power BI",
+          "Spark"
+        ],
+        "score": 0.4257,
+        "match_level": "高",
+        "explanation": "你的技能「统计分析、Pandas、SQL」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 14.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、Power BI，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "统计分析",
+            "Pandas",
+            "SQL",
+            "Python"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "Power BI",
+            "Spark"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.0932
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.3377
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            }
+          ],
+          "salary_gap": 2.0
+        },
+        "rank": 1
+      },
+      {
+        "job_id": "J00919",
+        "title": "数据分析师",
+        "company": "麦田科技",
+        "city": "杭州",
+        "salary": "10.5-15.0k",
+        "salary_min": 10.5,
+        "salary_max": 15.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": true,
+        "family": "数据分析",
+        "skills": [
+          "数据可视化",
+          "Python",
+          "Excel",
+          "A/B测试",
+          "业务分析",
+          "数据仓库",
+          "Tableau",
+          "SQL"
+        ],
+        "score": 0.4105,
+        "match_level": "中",
+        "explanation": "你的技能「数据可视化、Python、Excel」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 15.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、业务分析、数据仓库，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "数据可视化",
+            "Python",
+            "Excel",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "业务分析",
+            "数据仓库",
+            "Tableau"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": true
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.0529
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.4011
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            }
+          ],
+          "salary_gap": 3.0
+        },
+        "rank": 2
+      },
+      {
+        "job_id": "J00957",
+        "title": "数据分析师",
+        "company": "深蓝数据",
+        "city": "杭州",
+        "salary": "11.5-16.5k",
+        "salary_min": 11.5,
+        "salary_max": 16.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "SQL",
+          "Python",
+          "A/B测试",
+          "NumPy",
+          "Tableau",
+          "Power BI"
+        ],
+        "score": 0.3982,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、Python」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 16.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、NumPy，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "Python"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "NumPy",
+            "Tableau",
+            "Power BI"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.029
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.5655
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 4.5
+        },
+        "rank": 3
+      },
+      {
+        "job_id": "J00854",
+        "title": "数据运营分析师",
+        "company": "advantage 科技",
+        "city": "上海",
+        "salary": "9.5-13.5k",
+        "salary_min": 9.5,
+        "salary_max": 13.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": true,
+        "family": "数据分析",
+        "skills": [
+          "业务分析",
+          "Python",
+          "Pandas",
+          "统计分析",
+          "Excel",
+          "ETL",
+          "Power BI",
+          "NumPy"
+        ],
+        "score": 0.3681,
+        "match_level": "中",
+        "explanation": "你的技能「Python、Pandas、统计分析」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 13.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、ETL、Power BI，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "Pandas",
+            "统计分析",
+            "Excel"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "ETL",
+            "Power BI",
+            "NumPy"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": true
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.08
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 1.5
+        },
+        "rank": 4
+      },
+      {
+        "job_id": "J00910",
+        "title": "数据分析师",
+        "company": "博观智能",
+        "city": "上海",
+        "salary": "12.0-17.0k",
+        "salary_min": 12.0,
+        "salary_max": 17.0,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "SQL",
+          "数据可视化",
+          "统计分析",
+          "Pandas",
+          "Excel",
+          "数据清洗",
+          "Python"
+        ],
+        "score": 0.354,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、数据可视化、统计分析」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 17.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 数据清洗，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "数据可视化",
+            "统计分析",
+            "Pandas",
+            "Excel",
+            "Python"
+          ],
+          "missing_skills": [
+            "数据清洗"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.6555
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.479
+            },
+            {
+              "feature": "cluster_skill_sim",
+              "label": "分群技能相似度",
+              "contribution": 0.1606
+            }
+          ],
+          "salary_gap": 5.0
+        },
+        "rank": 5
+      },
+      {
+        "job_id": "J00990",
+        "title": "数据运营分析师",
+        "company": "云帆网络",
+        "city": "杭州",
+        "salary": "11.0-16.0k",
+        "salary_min": 11.0,
+        "salary_max": 16.0,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "Python",
+          "Pandas",
+          "业务分析",
+          "A/B测试",
+          "Excel",
+          "Hive",
+          "数据清洗",
+          "ETL",
+          "Spark"
+        ],
+        "score": 0.3507,
+        "match_level": "中",
+        "explanation": "你的技能「Python、Pandas、Excel」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 16.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 业务分析、A/B测试、Hive，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "Pandas",
+            "Excel"
+          ],
+          "missing_skills": [
+            "业务分析",
+            "A/B测试",
+            "Hive",
+            "数据清洗",
+            "ETL",
+            "Spark"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.6814
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.6588
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 4.0
+        },
+        "rank": 6
+      },
+      {
+        "job_id": "J00982",
+        "title": "数据运营分析师",
+        "company": "星桥科技",
+        "city": "上海",
+        "salary": "10.5-15.5k",
+        "salary_min": 10.5,
+        "salary_max": 15.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "SQL",
+          "统计分析",
+          "Pandas",
+          "A/B测试",
+          "Python",
+          "Tableau",
+          "NumPy",
+          "Spark",
+          "数据清洗",
+          "scikit-learn"
+        ],
+        "score": 0.3445,
+        "match_level": "中",
+        "explanation": "你的技能「SQL、统计分析、Pandas」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 15.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Tableau、NumPy，你的画像中尚未填写。模型主要依据：岗位热度、岗位文本与画像相似度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "SQL",
+            "统计分析",
+            "Pandas",
+            "Python"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Tableau",
+            "NumPy",
+            "Spark",
+            "数据清洗",
+            "scikit-learn"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.7016
+            },
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.5194
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 3.5
+        },
+        "rank": 7
+      },
+      {
+        "job_id": "J00761",
+        "title": "数据分析师",
+        "company": "灵犀智能",
+        "city": "上海",
+        "salary": "10.0-14.5k",
+        "salary_min": 10.0,
+        "salary_max": 14.5,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "统计分析",
+          "数据可视化",
+          "A/B测试",
+          "Excel",
+          "Python",
+          "SQL",
+          "Spark",
+          "Power BI",
+          "Hive"
+        ],
+        "score": 0.3101,
+        "match_level": "低",
+        "explanation": "你的技能「统计分析、数据可视化、Excel」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 14.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Spark、Power BI，你的画像中尚未填写。模型主要依据：岗位热度、岗位文本与画像相似度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "统计分析",
+            "数据可视化",
+            "Excel",
+            "Python",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Spark",
+            "Power BI",
+            "Hive"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.6136
+            },
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.274
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2562
+            }
+          ],
+          "salary_gap": 2.5
+        },
+        "rank": 8
+      },
+      {
+        "job_id": "J00998",
+        "title": "数据分析师",
+        "company": "同舟网络",
+        "city": "杭州",
+        "salary": "10.0-14.5k",
+        "salary_min": 10.0,
+        "salary_max": 14.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "数据可视化",
+          "Pandas",
+          "SQL",
+          "A/B测试",
+          "Tableau",
+          "推荐系统"
+        ],
+        "score": 0.3047,
+        "match_level": "低",
+        "explanation": "你的技能「数据可视化、Pandas、SQL」与该岗位要求直接重合；工作地点 杭州 在期望范围内；薪资上限 14.5k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Tableau、推荐系统，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、目标方向匹配。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "数据可视化",
+            "Pandas",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Tableau",
+            "推荐系统"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.5232
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1522
+            }
+          ],
+          "salary_gap": 2.5
+        },
+        "rank": 9
+      },
+      {
+        "job_id": "J00868",
+        "title": "数据运营分析师",
+        "company": "白泽智能",
+        "city": "上海",
+        "salary": "9.0-13.0k",
+        "salary_min": 9.0,
+        "salary_max": 13.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "数据分析",
+        "skills": [
+          "Pandas",
+          "A/B测试",
+          "统计分析",
+          "数据可视化",
+          "SQL",
+          "Hive",
+          "数据仓库",
+          "ETL"
+        ],
+        "score": 0.2973,
+        "match_level": "低",
+        "explanation": "你的技能「Pandas、统计分析、数据可视化」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 13.0k 不低于你的期望 12.0k。你属于「数据与算法型（Python/SQL）」分群，该群体常见方向为「数据分析、运营」。需注意：岗位还要求 A/B测试、Hive、数据仓库，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Pandas",
+            "统计分析",
+            "数据可视化",
+            "SQL"
+          ],
+          "missing_skills": [
+            "A/B测试",
+            "Hive",
+            "数据仓库",
+            "ETL"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（Python/SQL）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.4438
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.1938
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 1.0
+        },
+        "rank": 10
+      }
+    ],
+    "warnings": [],
+    "questions": [],
+    "confidence": "high",
+    "next_actions": [
+      {
+        "action": "adjust_constraints",
+        "label": "放宽城市或薪资"
+      },
+      {
+        "action": "add_skills",
+        "label": "补充技能"
+      },
+      {
+        "action": "export_requires_confirmation",
+        "label": "确认后导出投递清单"
+      }
+    ],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 6
+        },
+        "elapsed_ms": 0.02
+      },
+      {
+        "step": "validate_profile",
+        "status": "ok",
+        "detail": {
+          "errors": 0,
+          "missing": []
+        },
+        "elapsed_ms": 0.03
+      },
+      {
+        "step": "infer_preferences",
+        "status": "ok",
+        "detail": {
+          "target_cities": [
+            "杭州",
+            "上海"
+          ],
+          "families": [
+            "data"
+          ]
+        },
+        "elapsed_ms": 0.03
+      },
+      {
+        "step": "user_clustering",
+        "status": "ok",
+        "detail": {
+          "cluster": {
+            "id": 5,
+            "name": "数据与算法型（Python/SQL）",
+            "size": 51,
+            "top_skills": [
+              "Python",
+              "SQL",
+              "Excel",
+              "业务分析",
+              "A/B测试"
+            ],
+            "top_preferred_families": [
+              "数据分析",
+              "运营",
+              "后端开发"
+            ]
+          }
+        },
+        "elapsed_ms": 0.24
+      },
+      {
+        "step": "hard_constraint_filter",
+        "status": "ok",
+        "detail": {
+          "candidate_counts": [
+            172
+          ],
+          "relax_level": 0
+        },
+        "elapsed_ms": 0.33
+      },
+      {
+        "step": "learned_ranking",
+        "status": "ok",
+        "detail": {
+          "returned": 10
+        },
+        "elapsed_ms": 5.58
+      },
+      {
+        "step": "explanation_generation",
+        "status": "ok",
+        "detail": {
+          "explanations": 10
+        },
+        "elapsed_ms": 50.41
+      },
+      {
+        "step": "confidence_check",
+        "status": "high",
+        "detail": {
+          "top_score": 0.4257,
+          "margin": 0.0717
+        },
+        "elapsed_ms": 50.42
+      }
+    ],
+    "latency_ms": 50.42
+  },
+  "invalid": {
+    "status": "need_more_info",
+    "session_id": "demo_invalid",
+    "message": "还需要补充或修正一些信息，才能给出可靠推荐。",
+    "profile": {
+      "user_id": "demo_invalid",
+      "name": "匿名求职者",
+      "city": "杭州",
+      "target_cities": [
+        "杭州"
+      ],
+      "expected_salary": null,
+      "experience_years": 0,
+      "education": "本科",
+      "remote_pref": false,
+      "skills": [
+        "SQL",
+        "Python"
+      ],
+      "preferred_families": [
+        "data"
+      ],
+      "bio": ""
+    },
+    "questions": [
+      "期望月薪需在 3–100k 之间，请重新填写。",
+      "你的期望月薪是多少 k？（例如 12 表示 12k/月）"
+    ],
+    "warnings": [],
+    "recommendations": [],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 2
+        },
+        "elapsed_ms": 0.02
+      },
+      {
+        "step": "validate_profile",
+        "status": "need_more_info",
+        "detail": {
+          "errors": 1,
+          "missing": [
+            "expected_salary"
+          ]
+        },
+        "elapsed_ms": 0.02
+      }
+    ],
+    "latency_ms": 0.03
+  },
+  "no_match": {
+    "status": "no_match",
+    "session_id": "demo_nomatch",
+    "message": "当前条件下没有找到可推荐的岗位。",
+    "profile": {
+      "user_id": "demo_nomatch",
+      "name": "匿名求职者",
+      "city": "重庆",
+      "target_cities": [
+        "重庆"
+      ],
+      "expected_salary": 100.0,
+      "experience_years": 0,
+      "education": "大专",
+      "remote_pref": false,
+      "skills": [
+        "会计核算",
+        "财务报表",
+        "Excel"
+      ],
+      "preferred_families": [
+        "finance"
+      ],
+      "bio": ""
+    },
+    "cluster": {
+      "id": 7,
+      "name": "数据与算法型（PyTorch/TensorFlow）",
+      "size": 37,
+      "top_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "深度学习",
+        "NLP"
+      ],
+      "top_preferred_families": [
+        "算法/机器学习",
+        "数据分析",
+        "后端开发"
+      ]
+    },
+    "questions": [
+      "是否增加目标城市（如北京、上海、深圳、杭州）？",
+      "是否将期望薪资下调 10%–20%？",
+      "是否补充技能或接受相关岗位方向？"
+    ],
+    "warnings": [
+      "期望薪资较高，可能会过滤掉部分匹配岗位。",
+      "严格条件下仅有 0 个候选，已按第 4 级放宽薪资/经验/城市范围；请确认放宽后的结果。"
+    ],
+    "recommendations": [],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 3
+        },
+        "elapsed_ms": 0.01
+      },
+      {
+        "step": "validate_profile",
+        "status": "ok",
+        "detail": {
+          "errors": 0,
+          "missing": []
+        },
+        "elapsed_ms": 0.01
+      },
+      {
+        "step": "infer_preferences",
+        "status": "ok",
+        "detail": {
+          "target_cities": [
+            "重庆"
+          ],
+          "families": [
+            "finance"
+          ]
+        },
+        "elapsed_ms": 0.01
+      },
+      {
+        "step": "user_clustering",
+        "status": "ok",
+        "detail": {
+          "cluster": {
+            "id": 7,
+            "name": "数据与算法型（PyTorch/TensorFlow）",
+            "size": 37,
+            "top_skills": [
+              "PyTorch",
+              "TensorFlow",
+              "scikit-learn",
+              "深度学习",
+              "NLP"
+            ],
+            "top_preferred_families": [
+              "算法/机器学习",
+              "数据分析",
+              "后端开发"
+            ]
+          }
+        },
+        "elapsed_ms": 0.26
+      },
+      {
+        "step": "hard_constraint_filter",
+        "status": "no_match",
+        "detail": {
+          "candidate_counts": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "relax_level": 4
+        },
+        "elapsed_ms": 1.0
+      }
+    ],
+    "latency_ms": 1.0
+  },
+  "remote": {
+    "status": "ok",
+    "session_id": "demo_remote",
+    "message": "已为「数据与算法型（PyTorch/TensorFlow）」画像生成 10 个岗位建议。",
+    "profile": {
+      "user_id": "demo_remote",
+      "name": "匿名求职者",
+      "city": "北京",
+      "target_cities": [
+        "北京",
+        "上海",
+        "杭州"
+      ],
+      "expected_salary": 22.0,
+      "experience_years": 3,
+      "education": "硕士",
+      "remote_pref": true,
+      "skills": [
+        "Python",
+        "机器学习",
+        "PyTorch",
+        "NLP",
+        "模型评估"
+      ],
+      "preferred_families": [
+        "algorithm"
+      ],
+      "bio": ""
+    },
+    "cluster": {
+      "id": 7,
+      "name": "数据与算法型（PyTorch/TensorFlow）",
+      "size": 37,
+      "top_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "深度学习",
+        "NLP"
+      ],
+      "top_preferred_families": [
+        "算法/机器学习",
+        "数据分析",
+        "后端开发"
+      ]
+    },
+    "recommendations": [
+      {
+        "job_id": "J00503",
+        "title": "大模型算法工程师",
+        "company": "微光互联",
+        "city": "上海",
+        "salary": "16.0-22.5k",
+        "salary_min": 16.0,
+        "salary_max": 22.5,
+        "experience_min": 0,
+        "education": "大专",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "机器学习",
+          "PyTorch",
+          "NLP",
+          "Python",
+          "强化学习",
+          "知识图谱",
+          "Spark"
+        ],
+        "score": 0.5107,
+        "match_level": "高",
+        "explanation": "你的技能「机器学习、PyTorch、NLP」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 22.5k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 强化学习、知识图谱、Spark，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "机器学习",
+            "PyTorch",
+            "NLP",
+            "Python"
+          ],
+          "missing_skills": [
+            "强化学习",
+            "知识图谱",
+            "Spark"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.6281
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 1.1855
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2562
+            }
+          ],
+          "salary_gap": 0.5
+        },
+        "rank": 1
+      },
+      {
+        "job_id": "J00673",
+        "title": "NLP算法工程师",
+        "company": "启明信息",
+        "city": "北京",
+        "salary": "17.0-24.5k",
+        "salary_min": 17.0,
+        "salary_max": 24.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "TensorFlow",
+          "机器学习",
+          "推荐系统",
+          "PyTorch",
+          "NLP",
+          "RAG",
+          "强化学习",
+          "计算机视觉"
+        ],
+        "score": 0.494,
+        "match_level": "高",
+        "explanation": "你的技能「机器学习、PyTorch、NLP」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 24.5k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 TensorFlow、推荐系统、RAG，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "机器学习",
+            "PyTorch",
+            "NLP"
+          ],
+          "missing_skills": [
+            "TensorFlow",
+            "推荐系统",
+            "RAG",
+            "强化学习",
+            "计算机视觉"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.578
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.919
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 2.5
+        },
+        "rank": 2
+      },
+      {
+        "job_id": "J00651",
+        "title": "NLP算法工程师",
+        "company": "云栖信息",
+        "city": "北京",
+        "salary": "18.0-26.0k",
+        "salary_min": 18.0,
+        "salary_max": 26.0,
+        "experience_min": 3,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "TensorFlow",
+          "PyTorch",
+          "NLP",
+          "机器学习",
+          "scikit-learn",
+          "知识图谱",
+          "特征工程",
+          "RAG",
+          "推荐系统",
+          "Excel"
+        ],
+        "score": 0.4925,
+        "match_level": "高",
+        "explanation": "你的技能「PyTorch、NLP、机器学习」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 26.0k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 TensorFlow、scikit-learn、知识图谱，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "PyTorch",
+            "NLP",
+            "机器学习"
+          ],
+          "missing_skills": [
+            "TensorFlow",
+            "scikit-learn",
+            "知识图谱",
+            "特征工程",
+            "RAG",
+            "推荐系统",
+            "Excel"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.6385
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.5144
+            },
+            {
+              "feature": "salary_fit",
+              "label": "薪资匹配",
+              "contribution": 0.1599
+            }
+          ],
+          "salary_gap": 4.0
+        },
+        "rank": 3
+      },
+      {
+        "job_id": "J00683",
+        "title": "大模型算法工程师",
+        "company": "博观智能",
+        "city": "北京",
+        "salary": "15.5-22.5k",
+        "salary_min": 15.5,
+        "salary_max": 22.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "scikit-learn",
+          "NLP",
+          "TensorFlow",
+          "深度学习",
+          "强化学习",
+          "RAG",
+          "Kubernetes"
+        ],
+        "score": 0.4239,
+        "match_level": "高",
+        "explanation": "你的技能「Python、PyTorch、NLP」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 22.5k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 scikit-learn、TensorFlow、深度学习，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "PyTorch",
+            "NLP"
+          ],
+          "missing_skills": [
+            "scikit-learn",
+            "TensorFlow",
+            "深度学习",
+            "强化学习",
+            "RAG",
+            "Kubernetes"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.125
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.7423
+            },
+            {
+              "feature": "cluster_skill_sim",
+              "label": "分群技能相似度",
+              "contribution": 0.1637
+            }
+          ],
+          "salary_gap": 0.5
+        },
+        "rank": 4
+      },
+      {
+        "job_id": "J00574",
+        "title": "算法工程师",
+        "company": "灵犀智能",
+        "city": "北京",
+        "salary": "20.0-29.0k",
+        "salary_min": 20.0,
+        "salary_max": 29.0,
+        "experience_min": 3,
+        "education": "硕士",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "深度学习",
+          "PyTorch",
+          "NLP",
+          "Python",
+          "机器学习",
+          "大模型",
+          "SQL",
+          "RAG",
+          "模型评估",
+          "Kubernetes"
+        ],
+        "score": 0.4195,
+        "match_level": "中",
+        "explanation": "你的技能「PyTorch、NLP、Python」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 29.0k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 深度学习、大模型、SQL，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、技能重合度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "PyTorch",
+            "NLP",
+            "Python",
+            "机器学习",
+            "模型评估"
+          ],
+          "missing_skills": [
+            "深度学习",
+            "大模型",
+            "SQL",
+            "RAG",
+            "Kubernetes"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.8461
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2562
+            },
+            {
+              "feature": "is_preferred_family",
+              "label": "目标方向匹配",
+              "contribution": 0.1598
+            }
+          ],
+          "salary_gap": 7.0
+        },
+        "rank": 5
+      },
+      {
+        "job_id": "J00672",
+        "title": "大模型算法工程师",
+        "company": "木棉数据",
+        "city": "上海",
+        "salary": "14.0-20.0k",
+        "salary_min": 14.0,
+        "salary_max": 20.0,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "机器学习",
+          "scikit-learn",
+          "Python",
+          "NLP",
+          "PyTorch",
+          "TensorFlow",
+          "深度学习",
+          "大模型"
+        ],
+        "score": 0.4084,
+        "match_level": "中",
+        "explanation": "你的技能「机器学习、Python、NLP」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 20.0k 与你的期望 22.0k 接近。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 scikit-learn、TensorFlow、深度学习，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "机器学习",
+            "Python",
+            "NLP",
+            "PyTorch"
+          ],
+          "missing_skills": [
+            "scikit-learn",
+            "TensorFlow",
+            "深度学习",
+            "大模型"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.9216
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.7809
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2215
+            }
+          ],
+          "salary_gap": -2.0
+        },
+        "rank": 6
+      },
+      {
+        "job_id": "J00687",
+        "title": "算法工程师",
+        "company": "星桥科技",
+        "city": "北京",
+        "salary": "18.5-26.5k",
+        "salary_min": 18.5,
+        "salary_max": 26.5,
+        "experience_min": 3,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "scikit-learn",
+          "Python",
+          "推荐系统",
+          "PyTorch",
+          "模型评估",
+          "NLP",
+          "Go"
+        ],
+        "score": 0.4078,
+        "match_level": "中",
+        "explanation": "你的技能「Python、PyTorch、模型评估」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 26.5k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 scikit-learn、推荐系统、Go，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "Python",
+            "PyTorch",
+            "模型评估",
+            "NLP"
+          ],
+          "missing_skills": [
+            "scikit-learn",
+            "推荐系统",
+            "Go"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 1.0668
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.3377
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2562
+            }
+          ],
+          "salary_gap": 4.5
+        },
+        "rank": 7
+      },
+      {
+        "job_id": "J00677",
+        "title": "NLP算法工程师",
+        "company": "一川网络",
+        "city": "上海",
+        "salary": "14.0-20.5k",
+        "salary_min": 14.0,
+        "salary_max": 20.5,
+        "experience_min": 0,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "scikit-learn",
+          "PyTorch",
+          "Python",
+          "TensorFlow",
+          "NLP",
+          "SQL",
+          "模型评估",
+          "强化学习"
+        ],
+        "score": 0.4066,
+        "match_level": "中",
+        "explanation": "你的技能「PyTorch、Python、NLP」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 20.5k 与你的期望 22.0k 接近。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 scikit-learn、TensorFlow、SQL，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "PyTorch",
+            "Python",
+            "NLP",
+            "模型评估"
+          ],
+          "missing_skills": [
+            "scikit-learn",
+            "TensorFlow",
+            "SQL",
+            "强化学习"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.9756
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.5144
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2215
+            }
+          ],
+          "salary_gap": -1.5
+        },
+        "rank": 8
+      },
+      {
+        "job_id": "J00696",
+        "title": "推荐算法工程师",
+        "company": "星桥科技",
+        "city": "北京",
+        "salary": "18.5-26.5k",
+        "salary_min": 18.5,
+        "salary_max": 26.5,
+        "experience_min": 3,
+        "education": "大专",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "NLP",
+          "机器学习",
+          "深度学习",
+          "PyTorch",
+          "Python"
+        ],
+        "score": 0.4007,
+        "match_level": "中",
+        "explanation": "你的技能「NLP、机器学习、PyTorch」与该岗位要求直接重合；工作地点 北京 在期望范围内；薪资上限 26.5k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 深度学习，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "NLP",
+            "机器学习",
+            "PyTorch",
+            "Python"
+          ],
+          "missing_skills": [
+            "深度学习"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.948
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.4598
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.3602
+            }
+          ],
+          "salary_gap": 4.5
+        },
+        "rank": 9
+      },
+      {
+        "job_id": "J00645",
+        "title": "NLP算法工程师",
+        "company": "极光智能",
+        "city": "上海",
+        "salary": "17.5-25.0k",
+        "salary_min": 17.5,
+        "salary_max": 25.0,
+        "experience_min": 1,
+        "education": "本科",
+        "remote": false,
+        "family": "算法/机器学习",
+        "skills": [
+          "TensorFlow",
+          "NLP",
+          "Python",
+          "深度学习",
+          "PyTorch",
+          "知识图谱",
+          "scikit-learn",
+          "模型评估"
+        ],
+        "score": 0.3984,
+        "match_level": "中",
+        "explanation": "你的技能「NLP、Python、PyTorch」与该岗位要求直接重合；工作地点 上海 在期望范围内；薪资上限 25.0k 不低于你的期望 22.0k。你属于「数据与算法型（PyTorch/TensorFlow）」分群，该群体常见方向为「算法/机器学习、数据分析」。需注意：岗位还要求 TensorFlow、深度学习、知识图谱，你的画像中尚未填写。模型主要依据：岗位文本与画像相似度、岗位热度。该结果由离线模型排序，不会自动投递；薪资与岗位信息以招聘方为准。",
+        "evidence": {
+          "matched_skills": [
+            "NLP",
+            "Python",
+            "PyTorch",
+            "模型评估"
+          ],
+          "missing_skills": [
+            "TensorFlow",
+            "深度学习",
+            "知识图谱",
+            "scikit-learn"
+          ],
+          "constraints": {
+            "city_ok": true,
+            "salary_ok": true,
+            "experience_ok": true,
+            "education_ok": true,
+            "remote": false
+          },
+          "cluster": "数据与算法型（PyTorch/TensorFlow）",
+          "top_factors": [
+            {
+              "feature": "content_sim",
+              "label": "岗位文本与画像相似度",
+              "contribution": 0.902
+            },
+            {
+              "feature": "popularity",
+              "label": "岗位热度",
+              "contribution": 0.4598
+            },
+            {
+              "feature": "skill_jaccard",
+              "label": "技能重合度",
+              "contribution": 0.2215
+            }
+          ],
+          "salary_gap": 3.0
+        },
+        "rank": 10
+      }
+    ],
+    "warnings": [
+      "远程岗位占比较低，远程偏好会作为加分项而非硬性过滤。"
+    ],
+    "questions": [],
+    "confidence": "high",
+    "next_actions": [
+      {
+        "action": "adjust_constraints",
+        "label": "放宽城市或薪资"
+      },
+      {
+        "action": "add_skills",
+        "label": "补充技能"
+      },
+      {
+        "action": "export_requires_confirmation",
+        "label": "确认后导出投递清单"
+      }
+    ],
+    "trace": [
+      {
+        "step": "parse_profile",
+        "status": "ok",
+        "detail": {
+          "skills": 5
+        },
+        "elapsed_ms": 0.02
+      },
+      {
+        "step": "validate_profile",
+        "status": "ok",
+        "detail": {
+          "errors": 0,
+          "missing": []
+        },
+        "elapsed_ms": 0.02
+      },
+      {
+        "step": "infer_preferences",
+        "status": "ok",
+        "detail": {
+          "target_cities": [
+            "北京",
+            "上海",
+            "杭州"
+          ],
+          "families": [
+            "algorithm"
+          ]
+        },
+        "elapsed_ms": 0.02
+      },
+      {
+        "step": "user_clustering",
+        "status": "ok",
+        "detail": {
+          "cluster": {
+            "id": 7,
+            "name": "数据与算法型（PyTorch/TensorFlow）",
+            "size": 37,
+            "top_skills": [
+              "PyTorch",
+              "TensorFlow",
+              "scikit-learn",
+              "深度学习",
+              "NLP"
+            ],
+            "top_preferred_families": [
+              "算法/机器学习",
+              "数据分析",
+              "后端开发"
+            ]
+          }
+        },
+        "elapsed_ms": 0.23
+      },
+      {
+        "step": "hard_constraint_filter",
+        "status": "ok",
+        "detail": {
+          "candidate_counts": [
+            181
+          ],
+          "relax_level": 0
+        },
+        "elapsed_ms": 0.34
+      },
+      {
+        "step": "learned_ranking",
+        "status": "ok",
+        "detail": {
+          "returned": 10
+        },
+        "elapsed_ms": 5.36
+      },
+      {
+        "step": "explanation_generation",
+        "status": "ok",
+        "detail": {
+          "explanations": 10
+        },
+        "elapsed_ms": 48.48
+      },
+      {
+        "step": "confidence_check",
+        "status": "high",
+        "detail": {
+          "top_score": 0.5107,
+          "margin": 0.0912
+        },
+        "elapsed_ms": 48.48
+      }
+    ],
+    "latency_ms": 48.49
+  },
+  "feedback": {
+    "status": "ok",
+    "session_id": "demo_coldstart",
+    "job_id": "J00958",
+    "action": "like"
+  }
+}

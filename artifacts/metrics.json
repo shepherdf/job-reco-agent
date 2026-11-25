@@ -1,0 +1,1931 @@
+{
+  "dataset": {
+    "n_jobs": 3000,
+    "n_users": 400,
+    "n_interactions": 13229,
+    "density": 0.011024166666666666,
+    "train": 9216,
+    "val": 1350,
+    "test": 2663
+  },
+  "clustering": {
+    "k": 8,
+    "silhouette": 0.1840996666442201,
+    "davies_bouldin": 1.8039314214964386,
+    "calinski_harabasz": 35.23534822093101,
+    "inertia": 4351.2692475143485,
+    "gmm_bic": -555807.959274051,
+    "gmm_aic": -566309.5024974921,
+    "gmm_silhouette": 0.1583870218742189,
+    "ari_kmeans_gmm": 0.5747752621844338,
+    "stability_ari_mean": 0.8216957219231823,
+    "stability_ari_std": 0.11653941131090302,
+    "k_selection": [
+      {
+        "k": 2,
+        "silhouette": 0.0866281324165333,
+        "davies_bouldin": 3.1528169765284573,
+        "calinski_harabasz": 38.197172094791384,
+        "inertia": 6468.316925807258,
+        "min_cluster_fraction": 0.4025
+      },
+      {
+        "k": 3,
+        "silhouette": 0.09432618051151113,
+        "davies_bouldin": 2.8282957364381764,
+        "calinski_harabasz": 35.325019736456284,
+        "inertia": 6018.116570773893,
+        "min_cluster_fraction": 0.2225
+      },
+      {
+        "k": 4,
+        "silhouette": 0.13244178372922288,
+        "davies_bouldin": 2.532078264680276,
+        "calinski_harabasz": 36.12110555776634,
+        "inertia": 5565.994313417554,
+        "min_cluster_fraction": 0.1675
+      },
+      {
+        "k": 5,
+        "silhouette": 0.14516543006191596,
+        "davies_bouldin": 2.3424831292415385,
+        "calinski_harabasz": 35.02744487823356,
+        "inertia": 5232.9341759998915,
+        "min_cluster_fraction": 0.1625
+      },
+      {
+        "k": 6,
+        "silhouette": 0.16316862875568539,
+        "davies_bouldin": 2.0987745843468635,
+        "calinski_harabasz": 35.4924897927542,
+        "inertia": 4887.644251717184,
+        "min_cluster_fraction": 0.095
+      },
+      {
+        "k": 7,
+        "silhouette": 0.1690189661241395,
+        "davies_bouldin": 1.9955402930457946,
+        "calinski_harabasz": 34.843827415662595,
+        "inertia": 4627.449650082035,
+        "min_cluster_fraction": 0.095
+      },
+      {
+        "k": 8,
+        "silhouette": 0.1840996666442201,
+        "davies_bouldin": 1.8039314214964386,
+        "calinski_harabasz": 35.23534822093101,
+        "inertia": 4351.2692475143485,
+        "min_cluster_fraction": 0.0825
+      },
+      {
+        "k": 9,
+        "silhouette": 0.1894930249151652,
+        "davies_bouldin": 1.8376045240234709,
+        "calinski_harabasz": 35.07727113043899,
+        "inertia": 4127.103737489004,
+        "min_cluster_fraction": 0.0875
+      },
+      {
+        "k": 10,
+        "silhouette": 0.19218483308357256,
+        "davies_bouldin": 1.7101941526515887,
+        "calinski_harabasz": 34.62617416103116,
+        "inertia": 3940.434157722281,
+        "min_cluster_fraction": 0.05
+      }
+    ]
+  },
+  "cluster_profiles": [
+    {
+      "cluster": 0,
+      "name": "后端与工程效能型（Python/Linux）",
+      "size": 82,
+      "fraction": 0.205,
+      "top_skills": [
+        "Python",
+        "Linux",
+        "Java",
+        "Docker",
+        "测试用例"
+      ],
+      "top_preferred_families": [
+        "后端开发",
+        "运维/DevOps",
+        "测试/质量"
+      ],
+      "top_job_families": [
+        "后端开发",
+        "运维/DevOps",
+        "测试/质量"
+      ],
+      "mean_experience": 3.231707317073171,
+      "mean_expected_salary": 16.554878048780488,
+      "education_distribution": {
+        "本科": 0.817,
+        "硕士": 0.134,
+        "大专": 0.049
+      },
+      "remote_rate": 0.14634146341463414
+    },
+    {
+      "cluster": 1,
+      "name": "前端与体验型（Figma/用户体验）",
+      "size": 51,
+      "fraction": 0.1275,
+      "top_skills": [
+        "Figma",
+        "用户体验",
+        "设计规范",
+        "视觉设计",
+        "Sketch"
+      ],
+      "top_preferred_families": [
+        "设计",
+        "前端开发",
+        "产品经理"
+      ],
+      "top_job_families": [
+        "设计",
+        "前端开发",
+        "产品经理"
+      ],
+      "mean_experience": 3.0392156862745097,
+      "mean_expected_salary": 14.549019607843137,
+      "education_distribution": {
+        "本科": 0.686,
+        "硕士": 0.196,
+        "大专": 0.118
+      },
+      "remote_rate": 0.0196078431372549
+    },
+    {
+      "cluster": 2,
+      "name": "产品与运营型（原型设计/数据分析）",
+      "size": 33,
+      "fraction": 0.0825,
+      "top_skills": [
+        "原型设计",
+        "数据分析",
+        "用户研究",
+        "PRD",
+        "需求分析"
+      ],
+      "top_preferred_families": [
+        "产品经理",
+        "运营",
+        "数据分析"
+      ],
+      "top_job_families": [
+        "产品经理",
+        "设计",
+        "数据分析"
+      ],
+      "mean_experience": 4.909090909090909,
+      "mean_expected_salary": 19.772727272727273,
+      "education_distribution": {
+        "本科": 0.606,
+        "硕士": 0.303,
+        "大专": 0.091
+      },
+      "remote_rate": 0.24242424242424243
+    },
+    {
+      "cluster": 3,
+      "name": "前端与体验型（React/Webpack）",
+      "size": 40,
+      "fraction": 0.1,
+      "top_skills": [
+        "React",
+        "Webpack",
+        "JavaScript",
+        "Vue",
+        "Node.js"
+      ],
+      "top_preferred_families": [
+        "前端开发",
+        "后端开发",
+        "产品经理"
+      ],
+      "top_job_families": [
+        "前端开发",
+        "后端开发",
+        "设计"
+      ],
+      "mean_experience": 2.2,
+      "mean_expected_salary": 14.25,
+      "education_distribution": {
+        "本科": 0.625,
+        "大专": 0.25,
+        "硕士": 0.125
+      },
+      "remote_rate": 0.25
+    },
+    {
+      "cluster": 4,
+      "name": "商业与职能型（Excel/HRBP）",
+      "size": 62,
+      "fraction": 0.155,
+      "top_skills": [
+        "Excel",
+        "HRBP",
+        "绩效管理",
+        "薪酬福利",
+        "招聘"
+      ],
+      "top_preferred_families": [
+        "人力资源",
+        "财务/会计",
+        "运营"
+      ],
+      "top_job_families": [
+        "财务/会计",
+        "人力资源",
+        "运营"
+      ],
+      "mean_experience": 2.9193548387096775,
+      "mean_expected_salary": 12.064516129032258,
+      "education_distribution": {
+        "本科": 0.758,
+        "硕士": 0.161,
+        "大专": 0.081
+      },
+      "remote_rate": 0.11290322580645161
+    },
+    {
+      "cluster": 5,
+      "name": "数据与算法型（Python/SQL）",
+      "size": 51,
+      "fraction": 0.1275,
+      "top_skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "业务分析",
+        "A/B测试"
+      ],
+      "top_preferred_families": [
+        "数据分析",
+        "运营",
+        "后端开发"
+      ],
+      "top_job_families": [
+        "数据分析",
+        "后端开发",
+        "财务/会计"
+      ],
+      "mean_experience": 2.784313725490196,
+      "mean_expected_salary": 14.450980392156863,
+      "education_distribution": {
+        "本科": 0.784,
+        "硕士": 0.196,
+        "大专": 0.02
+      },
+      "remote_rate": 0.11764705882352941
+    },
+    {
+      "cluster": 6,
+      "name": "商业与职能型（渠道管理/品牌推广）",
+      "size": 44,
+      "fraction": 0.11,
+      "top_skills": [
+        "渠道管理",
+        "品牌推广",
+        "客户开发",
+        "社群运营",
+        "CRM"
+      ],
+      "top_preferred_families": [
+        "销售/市场",
+        "运营",
+        "产品经理"
+      ],
+      "top_job_families": [
+        "运营",
+        "销售/市场",
+        "数据分析"
+      ],
+      "mean_experience": 2.2045454545454546,
+      "mean_expected_salary": 11.295454545454545,
+      "education_distribution": {
+        "本科": 0.682,
+        "硕士": 0.159,
+        "大专": 0.159
+      },
+      "remote_rate": 0.09090909090909091
+    },
+    {
+      "cluster": 7,
+      "name": "数据与算法型（PyTorch/TensorFlow）",
+      "size": 37,
+      "fraction": 0.0925,
+      "top_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "深度学习",
+        "NLP"
+      ],
+      "top_preferred_families": [
+        "算法/机器学习",
+        "数据分析",
+        "后端开发"
+      ],
+      "top_job_families": [
+        "算法/机器学习",
+        "后端开发",
+        "数据分析"
+      ],
+      "mean_experience": 3.135135135135135,
+      "mean_expected_salary": 23.64864864864865,
+      "education_distribution": {
+        "本科": 0.649,
+        "硕士": 0.297,
+        "大专": 0.054
+      },
+      "remote_rate": 0.1891891891891892
+    }
+  ],
+  "ranker": {
+    "c_value": 0.1,
+    "val_ndcg@10": 0.2324475597084099,
+    "train_pairs": 34534
+  },
+  "main": {
+    "Popularity": {
+      "n_users": 383,
+      "precision@5": 0.005221932114882507,
+      "recall@10": 0.01895437025985329,
+      "ndcg@10": 0.011842509415089525,
+      "map@10": 0.00535544069673126,
+      "coverage@10": 0.007333333333333333,
+      "violation_rate": 0.8506527415143605,
+      "latency_ms": 5.453740469697989,
+      "ndcg@10_ci95": [
+        0.006388256779121397,
+        0.017998934736099908
+      ]
+    },
+    "Content": {
+      "n_users": 383,
+      "precision@5": 0.015665796344647518,
+      "recall@10": 0.02641738157403954,
+      "ndcg@10": 0.021703003060758994,
+      "map@10": 0.007964529443921462,
+      "coverage@10": 0.6986666666666667,
+      "violation_rate": 0.9318537859007834,
+      "latency_ms": 5.4346315925041155,
+      "ndcg@10_ci95": [
+        0.016041637786417963,
+        0.027857058909433643
+      ]
+    },
+    "ItemCF": {
+      "n_users": 383,
+      "precision@5": 0.09190600522193212,
+      "recall@10": 0.13581064279497695,
+      "ndcg@10": 0.12119129822646138,
+      "map@10": 0.059260390332518266,
+      "coverage@10": 0.5466666666666666,
+      "violation_rate": 0.37258485639686684,
+      "latency_ms": 5.440461357530236,
+      "ndcg@10_ci95": [
+        0.10602626841124876,
+        0.1375723791977187
+      ]
+    },
+    "SVD": {
+      "n_users": 383,
+      "precision@5": 0.07780678851174934,
+      "recall@10": 0.11914708442123585,
+      "ndcg@10": 0.10664625152265639,
+      "map@10": 0.05409930428510249,
+      "coverage@10": 0.20766666666666667,
+      "violation_rate": 0.33498694516971284,
+      "latency_ms": 5.452499738906561,
+      "ndcg@10_ci95": [
+        0.09199431481195897,
+        0.12295353962831346
+      ]
+    },
+    "ClusterPrior": {
+      "n_users": 383,
+      "precision@5": 0.008877284595300261,
+      "recall@10": 0.014801690911351485,
+      "ndcg@10": 0.012138309868972512,
+      "map@10": 0.0044709636102773,
+      "coverage@10": 0.034333333333333334,
+      "violation_rate": 0.931070496083551,
+      "latency_ms": 5.422322976210838,
+      "ndcg@10_ci95": [
+        0.00779133479104119,
+        0.016975632680461063
+      ]
+    },
+    "HybridRule": {
+      "n_users": 383,
+      "precision@5": 0.12323759791122717,
+      "recall@10": 0.1661413651622529,
+      "ndcg@10": 0.15438836840298573,
+      "map@10": 0.07977283435857663,
+      "coverage@10": 0.49966666666666665,
+      "violation_rate": 0.6574412532637075,
+      "latency_ms": 5.41571331576398,
+      "ndcg@10_ci95": [
+        0.1364436203948555,
+        0.172140172636711
+      ]
+    },
+    "Proposed": {
+      "n_users": 383,
+      "precision@5": 0.2825065274151436,
+      "recall@10": 0.41139811015790134,
+      "ndcg@10": 0.3728354717036128,
+      "map@10": 0.23605507303008233,
+      "coverage@10": 0.5573333333333333,
+      "violation_rate": 0.0,
+      "latency_ms": 7.070517232495678,
+      "ndcg@10_ci95": [
+        0.34959988053615143,
+        0.39894849575893565
+      ]
+    }
+  },
+  "fair_ranking": {
+    "Content": {
+      "n_users": 383,
+      "ndcg@10": 0.3543623404559113,
+      "recall@10": 0.39096730075842345
+    },
+    "ItemCF": {
+      "n_users": 383,
+      "ndcg@10": 0.18818938919991193,
+      "recall@10": 0.2283072236727589
+    },
+    "SVD": {
+      "n_users": 383,
+      "ndcg@10": 0.16144286250490808,
+      "recall@10": 0.20040407808031827
+    },
+    "ClusterPrior": {
+      "n_users": 383,
+      "ndcg@10": 0.2805312247532679,
+      "recall@10": 0.33466368270545815
+    },
+    "HybridRule": {
+      "n_users": 383,
+      "ndcg@10": 0.348139329128825,
+      "recall@10": 0.3874766878030586
+    },
+    "Proposed": {
+      "n_users": 383,
+      "ndcg@10": 0.3728354717036128,
+      "recall@10": 0.41139811015790134
+    }
+  },
+  "elapsed_seconds_before_extra": 45.71281933784485,
+  "ablation": {
+    "Full": {
+      "n_users": 383,
+      "precision@5": 0.2825065274151436,
+      "recall@10": 0.41139811015790134,
+      "ndcg@10": 0.3728354717036128,
+      "map@10": 0.23605507303008233,
+      "coverage@10": 0.5573333333333333,
+      "violation_rate": 0.0,
+      "latency_ms": 7.050611488472466,
+      "ndcg@10_ci95": [
+        0.34959988053615143,
+        0.39894849575893565
+      ]
+    },
+    "NoCluster": {
+      "n_users": 383,
+      "precision@5": 0.28250652741514365,
+      "recall@10": 0.412172075096357,
+      "ndcg@10": 0.37391583587350885,
+      "map@10": 0.23724092995190532,
+      "coverage@10": 0.5586666666666666,
+      "violation_rate": 0.0,
+      "latency_ms": 7.009554046750867,
+      "ndcg@10_ci95": [
+        0.3489581555670268,
+        0.40034344691477336
+      ]
+    },
+    "NoContent": {
+      "n_users": 383,
+      "precision@5": 0.2579634464751958,
+      "recall@10": 0.385574412532637,
+      "ndcg@10": 0.34114266924330083,
+      "map@10": 0.2103433417898636,
+      "coverage@10": 0.44333333333333336,
+      "violation_rate": 0.0,
+      "latency_ms": 7.020264491013326,
+      "ndcg@10_ci95": [
+        0.3171487343519599,
+        0.3668536933474223
+      ]
+    },
+    "NoSkill": {
+      "n_users": 383,
+      "precision@5": 0.2751958224543081,
+      "recall@10": 0.40617306975009326,
+      "ndcg@10": 0.3684233504240799,
+      "map@10": 0.23183672235938177,
+      "coverage@10": 0.5473333333333333,
+      "violation_rate": 0.0,
+      "latency_ms": 7.018403133119678,
+      "ndcg@10_ci95": [
+        0.3453344469016123,
+        0.3939726658831978
+      ]
+    },
+    "WithCF": {
+      "n_users": 383,
+      "precision@5": 0.2590078328981723,
+      "recall@10": 0.3802063906502549,
+      "ndcg@10": 0.3402367135688568,
+      "map@10": 0.20761833345174446,
+      "coverage@10": 0.5813333333333334,
+      "violation_rate": 0.0,
+      "latency_ms": 7.177640992160838,
+      "ndcg@10_ci95": [
+        0.3178925381730005,
+        0.36395017878042507
+      ]
+    },
+    "WithMMR": {
+      "n_users": 383,
+      "precision@5": 0.27624020887728457,
+      "recall@10": 0.40441377595424594,
+      "ndcg@10": 0.369216555477901,
+      "map@10": 0.23283178930115708,
+      "coverage@10": 0.5476666666666666,
+      "violation_rate": 0.0,
+      "latency_ms": 150.88379007852916,
+      "ndcg@10_ci95": [
+        0.34596542857567686,
+        0.3951408966567729
+      ]
+    },
+    "NoHardFilter": {
+      "n_users": 383,
+      "precision@5": 0.01671018276762402,
+      "recall@10": 0.02800261096605744,
+      "ndcg@10": 0.024095683683906858,
+      "map@10": 0.009319187640243216,
+      "coverage@10": 0.6216666666666667,
+      "violation_rate": 0.9386422976501305,
+      "latency_ms": 7.266925065170283,
+      "ndcg@10_ci95": [
+        0.017626306870406106,
+        0.030767672015727474
+      ]
+    }
+  },
+  "cold_start": {
+    "Popularity": {
+      "n_users": 39,
+      "precision@5": 0.0,
+      "recall@10": 0.01282051282051282,
+      "ndcg@10": 0.004544597097026865,
+      "map@10": 0.001282051282051282,
+      "coverage@10": 0.0033333333333333335,
+      "violation_rate": 0.8153846153846153,
+      "latency_ms": 5.302207690711396,
+      "ndcg@10_ci95": [
+        0.0,
+        0.013633791291080595
+      ]
+    },
+    "Content": {
+      "n_users": 39,
+      "precision@5": 0.02564102564102564,
+      "recall@10": 0.033974358974358965,
+      "ndcg@10": 0.030623852221680615,
+      "map@10": 0.011098392348392347,
+      "coverage@10": 0.12066666666666667,
+      "violation_rate": 0.8538461538461538,
+      "latency_ms": 5.252941028000071,
+      "ndcg@10_ci95": [
+        0.010588384630471154,
+        0.052503633114602107
+      ]
+    },
+    "ClusterPrior": {
+      "n_users": 39,
+      "precision@5": 0.010256410256410256,
+      "recall@10": 0.0115995115995116,
+      "ndcg@10": 0.007900866542305821,
+      "map@10": 0.0019993894993894992,
+      "coverage@10": 0.02666666666666667,
+      "violation_rate": 0.8897435897435898,
+      "latency_ms": 5.296628205822064,
+      "ndcg@10_ci95": [
+        0.0,
+        0.01824943649716209
+      ]
+    },
+    "HybridRule": {
+      "n_users": 39,
+      "precision@5": 0.030769230769230767,
+      "recall@10": 0.03458485958485958,
+      "ndcg@10": 0.03357016888190054,
+      "map@10": 0.012425383258716591,
+      "coverage@10": 0.11333333333333333,
+      "violation_rate": 0.8153846153846154,
+      "latency_ms": 5.214071796777157,
+      "ndcg@10_ci95": [
+        0.013331633586699705,
+        0.055223452130216136
+      ]
+    },
+    "Proposed": {
+      "n_users": 39,
+      "precision@5": 0.1384615384615385,
+      "recall@10": 0.24242979242979232,
+      "ndcg@10": 0.21003470646897612,
+      "map@10": 0.11067656549799408,
+      "coverage@10": 0.112,
+      "violation_rate": 0.0,
+      "latency_ms": 7.028215382701884,
+      "ndcg@10_ci95": [
+        0.15219514450228502,
+        0.2738136310203426
+      ]
+    }
+  },
+  "tokenizer_ablation": {
+    "word": {
+      "fair_ndcg@10": 0.3728354717036128,
+      "end_ndcg@10": 0.3728354717036128,
+      "end_recall@10": 0.41139811015790134,
+      "content_fair_ndcg@10": 0.3543623404559113
+    },
+    "char": {
+      "fair_ndcg@10": 0.3704453613747223,
+      "end_ndcg@10": 0.3704453613747223,
+      "end_recall@10": 0.40896120850428946,
+      "content_fair_ndcg@10": 0.3600428242704575
+    }
+  },
+  "error_cases": [
+    {
+      "user_id": "U0002",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "武汉",
+        "target_cities": [
+          "武汉",
+          "深圳"
+        ],
+        "expected_salary": 24.0,
+        "experience_years": 6,
+        "education": "硕士",
+        "skills": [
+          "需求分析",
+          "用户研究",
+          "原型设计",
+          "数据分析",
+          "竞品分析",
+          "Figma"
+        ],
+        "preferred_families": [
+          "product",
+          "data"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J01662",
+          "title": "产品经理",
+          "company": "明途科技",
+          "city": "深圳",
+          "salary": "17.5-25.0k",
+          "family": "产品经理",
+          "skills": [
+            "用户研究",
+            "原型设计",
+            "数据分析",
+            "Figma",
+            "需求分析"
+          ],
+          "score": 0.48399625064902563
+        },
+        {
+          "job_id": "J01674",
+          "title": "产品经理",
+          "company": "云栖信息",
+          "city": "深圳",
+          "salary": "16.0-23.0k",
+          "family": "产品经理",
+          "skills": [
+            "原型设计",
+            "敏捷开发",
+            "数据分析",
+            "需求分析",
+            "用户研究",
+            "竞品分析",
+            "PRD",
+            "Axure",
+            "Power BI"
+          ],
+          "score": 0.4039552141615587
+        },
+        {
+          "job_id": "J01592",
+          "title": "C端产品经理",
+          "company": "峰瑞科技",
+          "city": "武汉",
+          "salary": "16.5-23.5k",
+          "family": "产品经理",
+          "skills": [
+            "PRD",
+            "敏捷开发",
+            "原型设计",
+            "数据分析",
+            "需求分析",
+            "商业分析",
+            "项目管理",
+            "竞品分析"
+          ],
+          "score": 0.3867579787688048
+        },
+        {
+          "job_id": "J01559",
+          "title": "B端产品经理",
+          "company": "麦田科技",
+          "city": "武汉",
+          "salary": "18.5-26.5k",
+          "family": "产品经理",
+          "skills": [
+            "数据分析",
+            "用户研究",
+            "需求分析",
+            "敏捷开发",
+            "原型设计",
+            "竞品分析",
+            "项目管理",
+            "商业分析",
+            "SQL",
+            "插画"
+          ],
+          "score": 0.37729979771439276
+        },
+        {
+          "job_id": "J01563",
+          "title": "数据产品经理",
+          "company": "山海软件",
+          "city": "深圳",
+          "salary": "16.5-24.0k",
+          "family": "产品经理",
+          "skills": [
+            "PRD",
+            "用户研究",
+            "原型设计",
+            "项目管理",
+            "需求分析"
+          ],
+          "score": 0.37668872050360414
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J01538",
+          "title": "产品经理",
+          "company": "匠心网络",
+          "city": "深圳",
+          "salary": "17.0-24.5k",
+          "family": "产品经理",
+          "skills": [
+            "用户研究",
+            "PRD",
+            "敏捷开发",
+            "数据分析",
+            "用户增长",
+            "需求分析",
+            "竞品分析"
+          ]
+        },
+        {
+          "job_id": "J00515",
+          "title": "高级算法工程师",
+          "company": "启明信息",
+          "city": "深圳",
+          "salary": "26.5-38.0k",
+          "family": "算法/机器学习",
+          "skills": [
+            "scikit-learn",
+            "推荐系统",
+            "TensorFlow",
+            "NLP",
+            "PyTorch",
+            "特征工程",
+            "深度学习"
+          ]
+        },
+        {
+          "job_id": "J00835",
+          "title": "高级数据分析师",
+          "company": "明途科技",
+          "city": "深圳",
+          "salary": "17.5-25.0k",
+          "family": "数据分析",
+          "skills": [
+            "Pandas",
+            "统计分析",
+            "Python",
+            "Hive",
+            "Power BI"
+          ]
+        },
+        {
+          "job_id": "J01705",
+          "title": "C端产品经理",
+          "company": "启明信息",
+          "city": "深圳",
+          "salary": "16.0-23.0k",
+          "family": "产品经理",
+          "skills": [
+            "原型设计",
+            "用户研究",
+            "项目管理",
+            "Axure",
+            "需求分析"
+          ]
+        },
+        {
+          "job_id": "J01677",
+          "title": "数据产品经理",
+          "company": "万象云",
+          "city": "武汉",
+          "salary": "18.0-25.5k",
+          "family": "产品经理",
+          "skills": [
+            "数据分析",
+            "需求分析",
+            "项目管理",
+            "PRD",
+            "商业分析"
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "U0006",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "杭州",
+        "target_cities": [
+          "杭州",
+          "北京",
+          "上海"
+        ],
+        "expected_salary": 21.0,
+        "experience_years": 6,
+        "education": "硕士",
+        "skills": [
+          "Spring Boot",
+          "Python",
+          "MongoDB"
+        ],
+        "preferred_families": [
+          "backend"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J00244",
+          "title": "Go开发工程师",
+          "company": "星桥科技",
+          "city": "杭州",
+          "salary": "18.0-25.5k",
+          "family": "后端开发",
+          "skills": [
+            "Spring Boot",
+            "Python",
+            "Java",
+            "REST API",
+            "Shell"
+          ],
+          "score": 0.48657316538226714
+        },
+        {
+          "job_id": "J00067",
+          "title": "高级后端工程师",
+          "company": "敏行软件",
+          "city": "上海",
+          "salary": "20.0-28.5k",
+          "family": "后端开发",
+          "skills": [
+            "Docker",
+            "Spring Boot",
+            "Python",
+            "REST API",
+            "MySQL",
+            "Jenkins"
+          ],
+          "score": 0.47462083932807886
+        },
+        {
+          "job_id": "J00237",
+          "title": "高级后端工程师",
+          "company": "青禾科技",
+          "city": "上海",
+          "salary": "16.5-24.0k",
+          "family": "后端开发",
+          "skills": [
+            "Java",
+            "Django",
+            "Spring Boot",
+            "Python",
+            "消息队列",
+            "Kubernetes",
+            "MongoDB",
+            "小程序"
+          ],
+          "score": 0.40095992885393905
+        },
+        {
+          "job_id": "J00006",
+          "title": "Python后端工程师",
+          "company": "晨曦智能",
+          "city": "杭州",
+          "salary": "16.5-23.5k",
+          "family": "后端开发",
+          "skills": [
+            "Docker",
+            "MySQL",
+            "Redis",
+            "Java",
+            "Go",
+            "Spring Boot",
+            "Python",
+            "Kafka",
+            "Ansible"
+          ],
+          "score": 0.39143678600277787
+        },
+        {
+          "job_id": "J00008",
+          "title": "Go开发工程师",
+          "company": "明途科技",
+          "city": "北京",
+          "salary": "15.5-22.5k",
+          "family": "后端开发",
+          "skills": [
+            "Spring Boot",
+            "Go",
+            "REST API",
+            "Redis",
+            "微服务",
+            "MySQL",
+            "MongoDB"
+          ],
+          "score": 0.37040272730379203
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J00228",
+          "title": "Python后端工程师",
+          "company": "同舟网络",
+          "city": "北京",
+          "salary": "17.0-24.5k",
+          "family": "后端开发",
+          "skills": [
+            "Redis",
+            "Spring Boot",
+            "微服务",
+            "Django",
+            "Kubernetes",
+            "Go",
+            "REST API"
+          ]
+        },
+        {
+          "job_id": "J00012",
+          "title": "服务端开发工程师",
+          "company": "白泽智能",
+          "city": "杭州",
+          "salary": "17.0-24.5k",
+          "family": "后端开发",
+          "skills": [
+            "Redis",
+            "Django",
+            "Spring Boot",
+            "REST API",
+            "Docker",
+            "Web前端"
+          ]
+        },
+        {
+          "job_id": "J00145",
+          "title": "Java开发工程师",
+          "company": "微光互联",
+          "city": "上海",
+          "salary": "18.5-26.5k",
+          "family": "后端开发",
+          "skills": [
+            "Go",
+            "Redis",
+            "REST API",
+            "Spring Boot",
+            "Django",
+            "Kafka",
+            "微服务",
+            "Docker",
+            "消息队列"
+          ]
+        },
+        {
+          "job_id": "J00786",
+          "title": "数据分析师",
+          "company": "澜舟科技",
+          "city": "北京",
+          "salary": "16.5-23.5k",
+          "family": "数据分析",
+          "skills": [
+            "统计分析",
+            "Excel",
+            "SQL",
+            "A/B测试",
+            "Pandas",
+            "Python",
+            "SEM"
+          ]
+        },
+        {
+          "job_id": "J02708",
+          "title": "财务经理",
+          "company": "灵犀智能",
+          "city": "上海",
+          "salary": "15.5-22.5k",
+          "family": "财务/会计",
+          "skills": [
+            "ERP",
+            "财务分析",
+            "财务报表",
+            "会计核算",
+            "税务",
+            "资金管理",
+            "审计"
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "U0029",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "北京",
+        "target_cities": [
+          "北京",
+          "苏州",
+          "西安",
+          "广州"
+        ],
+        "expected_salary": 24.5,
+        "experience_years": 5,
+        "education": "硕士",
+        "skills": [
+          "Python",
+          "Docker",
+          "Spring Boot"
+        ],
+        "preferred_families": [
+          "backend",
+          "data"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J00102",
+          "title": "服务端开发工程师",
+          "company": "云帆网络",
+          "city": "广州",
+          "salary": "19.5-28.0k",
+          "family": "后端开发",
+          "skills": [
+            "微服务",
+            "Spring Boot",
+            "Django",
+            "MySQL",
+            "Java",
+            "Docker",
+            "Shell",
+            "Go",
+            "REST API",
+            "Webpack"
+          ],
+          "score": 0.3697566658494178
+        },
+        {
+          "job_id": "J00094",
+          "title": "服务端开发工程师",
+          "company": "微光互联",
+          "city": "北京",
+          "salary": "17.0-24.0k",
+          "family": "后端开发",
+          "skills": [
+            "Django",
+            "Spring Boot",
+            "MySQL",
+            "REST API",
+            "Kafka",
+            "微服务",
+            "消息队列",
+            "阿里云"
+          ],
+          "score": 0.3534710237629377
+        },
+        {
+          "job_id": "J00123",
+          "title": "Python后端工程师",
+          "company": "简一网络",
+          "city": "苏州",
+          "salary": "16.0-23.0k",
+          "family": "后端开发",
+          "skills": [
+            "微服务",
+            "Docker",
+            "REST API",
+            "Django",
+            "Spring Boot",
+            "Linux",
+            "MySQL",
+            "PostgreSQL"
+          ],
+          "score": 0.3428299091397503
+        },
+        {
+          "job_id": "J00008",
+          "title": "Go开发工程师",
+          "company": "明途科技",
+          "city": "北京",
+          "salary": "15.5-22.5k",
+          "family": "后端开发",
+          "skills": [
+            "Spring Boot",
+            "Go",
+            "REST API",
+            "Redis",
+            "微服务",
+            "MySQL",
+            "MongoDB"
+          ],
+          "score": 0.3296206093738713
+        },
+        {
+          "job_id": "J00011",
+          "title": "Go开发工程师",
+          "company": "极光智能",
+          "city": "广州",
+          "salary": "19.5-28.0k",
+          "family": "后端开发",
+          "skills": [
+            "Go",
+            "微服务",
+            "MySQL",
+            "Django",
+            "Docker",
+            "消息队列",
+            "Spring Boot",
+            "Redis",
+            "Java"
+          ],
+          "score": 0.31506287517183407
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J00679",
+          "title": "推荐算法工程师",
+          "company": "白泽智能",
+          "city": "北京",
+          "salary": "19.5-28.5k",
+          "family": "算法/机器学习",
+          "skills": [
+            "scikit-learn",
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "机器学习",
+            "SQL",
+            "NLP",
+            "模型评估",
+            "特征工程"
+          ]
+        },
+        {
+          "job_id": "J00456",
+          "title": "高级前端工程师",
+          "company": "知行科技",
+          "city": "广州",
+          "salary": "17.0-24.5k",
+          "family": "前端开发",
+          "skills": [
+            "React",
+            "Node.js",
+            "Vue",
+            "响应式设计",
+            "Web前端"
+          ]
+        },
+        {
+          "job_id": "J00748",
+          "title": "NLP算法工程师",
+          "company": "澜舟科技",
+          "city": "苏州",
+          "salary": "20.0-29.0k",
+          "family": "算法/机器学习",
+          "skills": [
+            "TensorFlow",
+            "Python",
+            "NLP",
+            "机器学习",
+            "推荐系统",
+            "大模型",
+            "模型评估",
+            "深度学习"
+          ]
+        },
+        {
+          "job_id": "J01583",
+          "title": "B端产品经理",
+          "company": "青禾科技",
+          "city": "北京",
+          "salary": "17.0-24.5k",
+          "family": "产品经理",
+          "skills": [
+            "敏捷开发",
+            "原型设计",
+            "PRD",
+            "用户研究",
+            "用户增长",
+            "商业分析",
+            "项目管理",
+            "数据清洗"
+          ]
+        },
+        {
+          "job_id": "J00598",
+          "title": "机器学习工程师",
+          "company": "智联未来",
+          "city": "广州",
+          "salary": "24.0-34.5k",
+          "family": "算法/机器学习",
+          "skills": [
+            "NLP",
+            "TensorFlow",
+            "PyTorch",
+            "计算机视觉",
+            "Python"
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "U0042",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "深圳",
+        "target_cities": [
+          "深圳",
+          "成都",
+          "苏州"
+        ],
+        "expected_salary": 15.0,
+        "experience_years": 3,
+        "education": "硕士",
+        "skills": [
+          "Excel",
+          "数据可视化",
+          "Python",
+          "A/B测试",
+          "SQL",
+          "Tableau",
+          "数据仓库",
+          "Spark"
+        ],
+        "preferred_families": [
+          "data",
+          "product"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J00851",
+          "title": "数据运营分析师",
+          "company": "敏行软件",
+          "city": "深圳",
+          "salary": "12.5-17.5k",
+          "family": "数据分析",
+          "skills": [
+            "统计分析",
+            "Excel",
+            "数据可视化",
+            "Python",
+            "SQL",
+            "Spark",
+            "A/B测试",
+            "Hive"
+          ],
+          "score": 0.5128456601459801
+        },
+        {
+          "job_id": "J00790",
+          "title": "商业分析师",
+          "company": "长风软件",
+          "city": "苏州",
+          "salary": "11.0-16.0k",
+          "family": "数据分析",
+          "skills": [
+            "Excel",
+            "A/B测试",
+            "数据可视化",
+            "Python",
+            "SQL",
+            "数据仓库",
+            "统计分析",
+            "Pandas",
+            "资金管理"
+          ],
+          "score": 0.46646801334220533
+        },
+        {
+          "job_id": "J00822",
+          "title": "数据运营分析师",
+          "company": "北辰信息",
+          "city": "深圳",
+          "salary": "11.5-16.0k",
+          "family": "数据分析",
+          "skills": [
+            "统计分析",
+            "Excel",
+            "SQL",
+            "数据可视化",
+            "A/B测试",
+            "数据仓库",
+            "数据清洗",
+            "Hive",
+            "Tableau",
+            "Figma"
+          ],
+          "score": 0.4452223711170313
+        },
+        {
+          "job_id": "J00874",
+          "title": "数据分析师",
+          "company": "澄明数据",
+          "city": "成都",
+          "salary": "12.0-17.0k",
+          "family": "数据分析",
+          "skills": [
+            "Excel",
+            "SQL",
+            "A/B测试",
+            "数据可视化",
+            "统计分析",
+            "Power BI",
+            "Spark",
+            "Tableau",
+            "Python"
+          ],
+          "score": 0.4222438272202041
+        },
+        {
+          "job_id": "J00766",
+          "title": "数据分析师",
+          "company": "跃迁网络",
+          "city": "成都",
+          "salary": "10.0-14.5k",
+          "family": "数据分析",
+          "skills": [
+            "数据可视化",
+            "Python",
+            "Excel",
+            "A/B测试",
+            "统计分析",
+            "数据清洗",
+            "Tableau",
+            "NumPy",
+            "Hive"
+          ],
+          "score": 0.416129500182718
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J00968",
+          "title": "数据分析师",
+          "company": "万象云",
+          "city": "深圳",
+          "salary": "9.5-13.5k",
+          "family": "数据分析",
+          "skills": [
+            "Pandas",
+            "SQL",
+            "统计分析",
+            "Excel",
+            "数据可视化",
+            "Python",
+            "NumPy",
+            "业务分析",
+            "预算管理"
+          ]
+        },
+        {
+          "job_id": "J01801",
+          "title": "用户运营",
+          "company": "敏行软件",
+          "city": "深圳",
+          "salary": "10.5-15.0k",
+          "family": "运营",
+          "skills": [
+            "活动策划",
+            "转化率",
+            "文案",
+            "SEO",
+            "社群运营"
+          ]
+        },
+        {
+          "job_id": "J00331",
+          "title": "前端开发工程师",
+          "company": "远航数据",
+          "city": "深圳",
+          "salary": "16.0-23.0k",
+          "family": "前端开发",
+          "skills": [
+            "Webpack",
+            "JavaScript",
+            "Node.js",
+            "Web前端",
+            "TypeScript",
+            "React",
+            "Three.js",
+            "Vue",
+            "原型设计"
+          ]
+        },
+        {
+          "job_id": "J00719",
+          "title": "NLP算法工程师",
+          "company": "原点软件",
+          "city": "成都",
+          "salary": "19.0-27.0k",
+          "family": "算法/机器学习",
+          "skills": [
+            "PyTorch",
+            "scikit-learn",
+            "深度学习",
+            "Python",
+            "TensorFlow",
+            "推荐系统",
+            "RAG",
+            "大模型",
+            "Hive"
+          ]
+        },
+        {
+          "job_id": "J00977",
+          "title": "数据运营分析师",
+          "company": "峰瑞科技",
+          "city": "深圳",
+          "salary": "11.5-16.5k",
+          "family": "数据分析",
+          "skills": [
+            "业务分析",
+            "Pandas",
+            "数据可视化",
+            "Python",
+            "数据仓库",
+            "数据清洗"
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "U0058",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "广州",
+        "target_cities": [
+          "广州",
+          "上海",
+          "北京"
+        ],
+        "expected_salary": 19.0,
+        "experience_years": 5,
+        "education": "硕士",
+        "skills": [
+          "统计分析",
+          "业务分析",
+          "Pandas",
+          "数据可视化",
+          "Excel",
+          "数据仓库",
+          "Spark",
+          "ERP"
+        ],
+        "preferred_families": [
+          "data",
+          "finance"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J00847",
+          "title": "数据分析师",
+          "company": "云栖信息",
+          "city": "北京",
+          "salary": "12.0-17.5k",
+          "family": "数据分析",
+          "skills": [
+            "数据可视化",
+            "统计分析",
+            "Python",
+            "业务分析",
+            "Pandas",
+            "SQL",
+            "数据清洗",
+            "数据仓库",
+            "Excel"
+          ],
+          "score": 0.43307375456563035
+        },
+        {
+          "job_id": "J00895",
+          "title": "高级数据分析师",
+          "company": "合流科技",
+          "city": "上海",
+          "salary": "17.0-24.5k",
+          "family": "数据分析",
+          "skills": [
+            "数据可视化",
+            "Excel",
+            "SQL",
+            "Pandas",
+            "A/B测试",
+            "Power BI",
+            "统计分析",
+            "业务分析"
+          ],
+          "score": 0.4201452709657491
+        },
+        {
+          "job_id": "J00875",
+          "title": "数据分析师",
+          "company": "星桥科技",
+          "city": "北京",
+          "salary": "13.0-18.5k",
+          "family": "数据分析",
+          "skills": [
+            "Python",
+            "Excel",
+            "Pandas",
+            "数据可视化",
+            "Hive",
+            "Spark",
+            "业务分析"
+          ],
+          "score": 0.41382626457989213
+        },
+        {
+          "job_id": "J00930",
+          "title": "高级数据分析师",
+          "company": "白泽智能",
+          "city": "上海",
+          "salary": "17.0-24.5k",
+          "family": "数据分析",
+          "skills": [
+            "数据可视化",
+            "统计分析",
+            "Excel",
+            "Pandas",
+            "数据仓库",
+            "SQL"
+          ],
+          "score": 0.36252016735596493
+        },
+        {
+          "job_id": "J00825",
+          "title": "高级数据分析师",
+          "company": "长风软件",
+          "city": "上海",
+          "salary": "17.5-25.0k",
+          "family": "数据分析",
+          "skills": [
+            "业务分析",
+            "Pandas",
+            "Python",
+            "Excel",
+            "A/B测试",
+            "统计分析",
+            "Spark",
+            "数据仓库"
+          ],
+          "score": 0.35702205657904273
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J00834",
+          "title": "商业分析师",
+          "company": "advantage 科技",
+          "city": "广州",
+          "salary": "14.5-21.0k",
+          "family": "数据分析",
+          "skills": [
+            "A/B测试",
+            "业务分析",
+            "SQL",
+            "统计分析",
+            "Pandas",
+            "Tableau",
+            "数据清洗",
+            "NumPy"
+          ]
+        },
+        {
+          "job_id": "J00679",
+          "title": "推荐算法工程师",
+          "company": "白泽智能",
+          "city": "北京",
+          "salary": "19.5-28.5k",
+          "family": "算法/机器学习",
+          "skills": [
+            "scikit-learn",
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "机器学习",
+            "SQL",
+            "NLP",
+            "模型评估",
+            "特征工程"
+          ]
+        },
+        {
+          "job_id": "J00173",
+          "title": "高级后端工程师",
+          "company": "云栖信息",
+          "city": "广州",
+          "salary": "17.5-25.0k",
+          "family": "后端开发",
+          "skills": [
+            "微服务",
+            "Java",
+            "Redis",
+            "Django",
+            "Shell",
+            "消息队列",
+            "Python"
+          ]
+        },
+        {
+          "job_id": "J00589",
+          "title": "NLP算法工程师",
+          "company": "启明信息",
+          "city": "北京",
+          "salary": "15.0-21.5k",
+          "family": "算法/机器学习",
+          "skills": [
+            "TensorFlow",
+            "机器学习",
+            "推荐系统",
+            "PyTorch",
+            "scikit-learn",
+            "特征工程",
+            "大模型",
+            "NLP"
+          ]
+        },
+        {
+          "job_id": "J00976",
+          "title": "数据产品经理",
+          "company": "启明信息",
+          "city": "北京",
+          "salary": "15.0-21.5k",
+          "family": "数据分析",
+          "skills": [
+            "Python",
+            "业务分析",
+            "SQL",
+            "数据可视化",
+            "统计分析",
+            "数据仓库"
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "U0081",
+      "ndcg@10": 0.0,
+      "user": {
+        "city": "深圳",
+        "target_cities": [
+          "深圳",
+          "成都",
+          "苏州",
+          "武汉"
+        ],
+        "expected_salary": 14.0,
+        "experience_years": 4,
+        "education": "本科",
+        "skills": [
+          "社群运营",
+          "数据复盘",
+          "电商运营",
+          "新媒体"
+        ],
+        "preferred_families": [
+          "operations",
+          "sales"
+        ]
+      },
+      "top_recommendations": [
+        {
+          "job_id": "J01990",
+          "title": "用户运营",
+          "company": "云帆网络",
+          "city": "武汉",
+          "salary": "15.5-22.5k",
+          "family": "运营",
+          "skills": [
+            "活动策划",
+            "文案",
+            "内容运营",
+            "数据复盘",
+            "电商运营",
+            "用户运营"
+          ],
+          "score": 0.43486942951800656
+        },
+        {
+          "job_id": "J01962",
+          "title": "活动运营",
+          "company": "峰瑞科技",
+          "city": "成都",
+          "salary": "11.5-16.5k",
+          "family": "运营",
+          "skills": [
+            "内容运营",
+            "用户运营",
+            "转化率",
+            "社群运营",
+            "数据复盘"
+          ],
+          "score": 0.39291240633154345
+        },
+        {
+          "job_id": "J01763",
+          "title": "运营经理",
+          "company": "敏行软件",
+          "city": "成都",
+          "salary": "12.0-17.0k",
+          "family": "运营",
+          "skills": [
+            "转化率",
+            "内容运营",
+            "社群运营",
+            "数据复盘",
+            "活动策划",
+            "电商运营",
+            "数据分析",
+            "用户运营"
+          ],
+          "score": 0.3914124021703206
+        },
+        {
+          "job_id": "J01855",
+          "title": "活动运营",
+          "company": "微光互联",
+          "city": "深圳",
+          "salary": "10.5-15.5k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "内容运营",
+            "用户运营",
+            "活动策划",
+            "社群运营",
+            "电商运营",
+            "SEO"
+          ],
+          "score": 0.35956869356303717
+        },
+        {
+          "job_id": "J01753",
+          "title": "新媒体运营",
+          "company": "灵犀智能",
+          "city": "深圳",
+          "salary": "11.0-16.0k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "活动策划",
+            "用户运营",
+            "内容运营",
+            "直播运营",
+            "新媒体",
+            "社群运营",
+            "用户研究"
+          ],
+          "score": 0.34706072488184236
+        }
+      ],
+      "test_positives": [
+        {
+          "job_id": "J02883",
+          "title": "销售专员",
+          "company": "博观智能",
+          "city": "苏州",
+          "salary": "12.0-17.5k",
+          "family": "销售/市场",
+          "skills": [
+            "CRM",
+            "市场调研",
+            "品牌推广",
+            "商务谈判",
+            "数字营销",
+            "数据分析",
+            "大客户销售",
+            "渠道管理",
+            "销售管理"
+          ]
+        },
+        {
+          "job_id": "J01893",
+          "title": "内容运营",
+          "company": "极光智能",
+          "city": "深圳",
+          "salary": "13.0-19.0k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "内容运营",
+            "社群运营",
+            "活动策划",
+            "转化率",
+            "SEO",
+            "SEM",
+            "Python"
+          ]
+        },
+        {
+          "job_id": "J01959",
+          "title": "运营专员",
+          "company": "极光智能",
+          "city": "武汉",
+          "salary": "11.5-16.5k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "文案",
+            "内容运营",
+            "SEM",
+            "电商运营"
+          ]
+        },
+        {
+          "job_id": "J01864",
+          "title": "运营专员",
+          "company": "北辰信息",
+          "city": "深圳",
+          "salary": "12.0-17.0k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "用户运营",
+            "社群运营",
+            "内容运营",
+            "转化率",
+            "数据分析",
+            "SEO",
+            "SEM",
+            "活动策划"
+          ]
+        },
+        {
+          "job_id": "J01995",
+          "title": "内容运营",
+          "company": "青禾科技",
+          "city": "深圳",
+          "salary": "11.0-16.0k",
+          "family": "运营",
+          "skills": [
+            "数据复盘",
+            "文案",
+            "转化率",
+            "用户运营",
+            "活动策划",
+            "用户增长"
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 186.3565273284912
+}

@@ -1,0 +1,11 @@
+{
+  "city": "杭州",
+  "target_cities": ["杭州", "上海"],
+  "expected_salary": 12,
+  "experience_years": 0,
+  "education": "本科",
+  "remote_pref": false,
+  "skills": ["SQL", "Python", "Excel", "Pandas", "统计分析", "数据可视化"],
+  "preferred_families": ["data"],
+  "bio": "应届本科，统计学专业，做过课程数据分析和一段报表实习，希望找数据分析方向的工作。"
+}

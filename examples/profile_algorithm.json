@@ -1,0 +1,11 @@
+{
+  "city": "北京",
+  "target_cities": ["北京", "上海", "杭州"],
+  "expected_salary": 22,
+  "experience_years": 3,
+  "education": "硕士",
+  "remote_pref": true,
+  "skills": ["Python", "机器学习", "PyTorch", "NLP", "模型评估"],
+  "preferred_families": ["algorithm"],
+  "bio": "3 年算法经验，做过文本分类和检索排序，希望找大模型/NLP 方向的工作。"
+}
